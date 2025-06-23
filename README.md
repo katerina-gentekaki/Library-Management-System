@@ -35,3 +35,17 @@ A beginner-friendly SQL project built using **MySQL** to simulate a Library Mana
 - `borrow_date`
 - `return_date`
 
+## 📊 SQL Query Examples
+
+| Query No. | Description |
+|----------|-------------|
+| Q1 | Show the 5 most recently published books |
+| Q2 | List all authors and their books |
+| Q3 | Count how many books each author has written |
+| Q4 | List all borrowers who have borrowed books |
+| Q5 | Books borrowed by Alice |
+| Q6 | Find books currently borrowed (not returned yet) |
+| Q7 | Find borrowers who have borrowed more than 1 book |
+
+➡️ See [`queries.sql`](./queries.sql) for all query code.
+
