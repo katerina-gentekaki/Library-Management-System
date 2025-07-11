@@ -46,6 +46,7 @@ A beginner-friendly SQL project built using **MySQL** to simulate a Library Mana
 | Q5 | Books borrowed by Alice |
 | Q6 | Find books currently borrowed (not returned yet) |
 | Q7 | Find borrowers who have borrowed more than 1 book |
+| Q8 | Find borrowers with books due in 2 Days and borrowers with overdue books | 
 
 ➡️ See [`queries.sql`](./queries.sql) for all query code.
 
