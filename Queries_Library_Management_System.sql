@@ -50,3 +50,35 @@ WHERE borrower_id IN (
     GROUP BY borrower_id
     HAVING COUNT(*) > 1
 );
+
+-- Q.8 Find borrowers with books due in 2 Days and borrowers with overdue books --
+
+SELECT 
+    b.borrow_id,
+    br.name AS borrower_name,
+    br.email,
+    bk.title AS book_title,
+    b.return_date
+FROM 
+    BorrowedBooks b
+JOIN 
+    Borrowers br ON b.borrower_id = br.borrower_id
+JOIN 
+    Books bk ON b.book_id = bk.book_id
+WHERE 
+    b.return_date = CURDATE() + INTERVAL 2 DAY;
+
+SELECT 
+    b.borrow_id,
+    br.name AS borrower_name,
+    br.email,
+    bk.title AS book_title,
+    b.return_date
+FROM 
+    BorrowedBooks b
+JOIN 
+    Borrowers br ON b.borrower_id = br.borrower_id
+JOIN 
+    Books bk ON b.book_id = bk.book_id
+WHERE 
+    b.return_date < CURDATE();
